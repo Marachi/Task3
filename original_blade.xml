@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Knife id="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="blade.xsd">
+    <Type>DAGGER</Type>
+    <Handy>ONE_HANDED</Handy>
+    <Made_in>UK</Made_in>
+    <Visuals>
+        <visual>
+            <Length>200.0</Length>
+            <Width>19.0</Width>
+            <Material>STEEL</Material>
+            <Handle>STEEL</Handle>
+            <Fuller_exist>true</Fuller_exist>
+        </visual>
+        <visual>
+            <Length>400.0</Length>
+            <Width>15.0</Width>
+            <Material>SILVER</Material>
+            <Handle>WOOD_OAK</Handle>
+            <Fuller_exist>false</Fuller_exist>
+        </visual>
+        <visual>
+            <Length>100.0</Length>
+            <Width>15.0</Width>
+            <Material>COPPER</Material>
+            <Handle>WOOD_PINE</Handle>
+            <Fuller_exist>false</Fuller_exist>
+        </visual>
+        <visual>
+            <Length>700.0</Length>
+            <Width>29.0</Width>
+            <Material>COPPER</Material>
+            <Handle>WOOD_OAK</Handle>
+            <Fuller_exist>true</Fuller_exist>
+        </visual>
+        <visual>
+            <Length>500.0</Length>
+            <Width>12.0</Width>
+            <Material>SILVER</Material>
+            <Handle>PLASTIC</Handle>
+            <Fuller_exist>false</Fuller_exist>
+        </visual>
+    </Visuals>
+    <Collectible>true</Collectible>
+</Knife>

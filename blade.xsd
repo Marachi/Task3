@@ -1,0 +1,63 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Knife">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element type="xs:ENTITY" name="Type"/>
+                <xs:element type="xs:ENTITY" name="Handy"/>
+                <xs:element name="Made_in">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="(AU)|(AT)|(AZ)|(AL)|(DZ)|(AS)|(US)|(AI)|(AO)|(AD)|(AQ)|(AG)|(AR)|(AM)|
+                            (AW)|(AF)|(BS)|(BD)|(BB)|(BH)|(BZ)|(BY)|(BE)|(BJ)|(BM)|(BG)|(BO)|(BA)|(BW)|(BR)|(IO)|(VG)|
+                            (BN)|(BF)|(BI)|(BT)|(VU)|(VA)|(GB)|(HU)|(VE)|(VI)|(VN)|(GA)|(HT)|(GY)|(GM)|(GH)|(GP)|(GT)|
+                            (GW)|(GN)|(DE)|(GG)|(GI)|(NL)|(HN)|(HK)|(GD)|(GL)|(GR)|(GE)|(GU)|(DK)|(CD)|(JE)|(DJ)|(DO)|
+                            (DM)|(EG)|(ZM)|(EH)|(ZW)|(IL)|(IN)|(ID)|(JO)|(IQ)|(IR)|(IE)|(IS)|(ES)|(IT)|(YE)|(CV)|(KZ)|
+                            (KY)|(KH)|(CM)|(CA)|(QA)|(KE)|(CY)|(KI)|(CN)|(CC)|(CO)|(KM)|(CG)|(XK)|(CR)|(CI)|(CU)|(KW)|
+                            (KG)|(LA)|(LV)|(LS)|(LR)|(LB)|(LY)|(LT)|(LI)|(LU)|(MU)|(MR)|(MG)|(YT)|(MO)|(MW)|(MY)|(ML)|
+                            (UM)|(MV)|(MT)|(MA)|(MQ)|(MH)|(MX)|(FM)|(MZ)|(MD)|(MC)|(MN)|(MS)|(MM)|(NA)|(NR)|(NP)|(NG)|
+                            (NE)|(AN)|(NI)|(NU)|(NZ)|(NC)|(NO)|(AE)|(OM)|(CK)|(TC)|(BV)|(CP)|(IM)|(NF)|(CX)|(MF)|(HM)|
+                            (PK)|(PW)|(PS)|(PA)|(PG)|(PY)|(PE)|(PN)|(PL)|(PT)|(PR)|(MK)|(RE)|(RU)|(RW)|(RO)|(WS)|(SM)|
+                            (ST)|(SA)|(SZ)|(SH)|(KP)|(MP)|(SC)|(BL)|(PM)|(SN)|(VC)|(KN)|(LC)|(RS)|(SG)|(SY)|(SK)|(SI)|
+                            (SB)|(SO)|(SD)|(SR)|(SL)|(TJ)|(TH)|(TW)|(TZ)|(TL)|(TG)|(TK)|(TO)|(TT)|(TV)|(TN)|(TM)|(TR)|
+                            (UG)|(UK)|(UZ)|(UA)|(WF)|(UY)|(FO)|(FJ)|(PH)|(FI)|(FK)|(FR)|(GF)|(PF)|(TF)|(HR)|(CF)|(TD)|
+                            (ME)|(CZ)|(CL)|(CH)|(SE)|(SJ)|(LK)|(EC)|(GQ)|(AX)|(SV)|(ER)|(EE)|(ET)|(ZA)|(GS)|(KR)|(JM)|
+                            (JP)"/>
+
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="Visuals">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="visual" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Length">
+                                        <xs:simpleType >
+                                            <xs:restriction base="xs:double">
+                                                <xs:minInclusive value="10.0"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element type="xs:double" name="Width">
+                                            <xs:simpleType >
+                                                <xs:restriction base="xs:double">
+                                                    <xs:minInclusive value="10.0"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element type="xs:ENTITY" name="Material"/>
+                                        <xs:element type="xs:ENTITY" name="Handle"/>
+                                        <xs:element type="xs:boolean" name="Fuller_exist"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element type="xs:boolean" name="Collectible"/>
+            </xs:sequence>
+            <xs:attribute type="xs:int" name="id"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
