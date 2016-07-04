@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Knife id="1">
+    <колеекционный>true</колеекционный>
+    <type>DAGGER</type>
+    <handy>ONE_HANDED</handy>
+    <visual/>
+</Knife>

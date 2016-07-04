@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Knife id="1">
+    <collectible>true</collectible>
+    <type>DAGGER</type>
+    <handy>ONE_HANDED</handy>
+    <length>300.0</length>
+    <width>10.0</width>
+    <material>STEEL</material>
+</Knife>
